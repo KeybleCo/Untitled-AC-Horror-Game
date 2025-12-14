@@ -1,3 +1,13 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# C# build output
+bin/
+obj/
+
+# Mono / .NET
+.nuget/
+
+# VS Code user settings
+.vscode/
