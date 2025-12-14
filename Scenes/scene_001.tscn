@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://b55e1h0pbraph"]
+
+[ext_resource type="VideoStream" uid="uid://dip05ojmdlgqt" path="res://MP4/output.ogv" id="1_g11i7"]
+[ext_resource type="Texture2D" uid="uid://w5wj86pmjcpx" path="res://Assets/Black.png" id="1_woej8"]
+[ext_resource type="Script" uid="uid://qsok0ndf1mh5" path="res://Scripts/NullStretcher.cs" id="2_g11i7"]
+
+[node name="Scene001" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Camera2D"]
+texture = ExtResource("1_woej8")
+script = ExtResource("2_g11i7")
+
+[node name="Control" type="Control" parent="."]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -120.0
+offset_right = 160.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.7, 2.7)
+pivot_offset = Vector2(160, 120)
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -120.0
+offset_right = 160.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.1, 1.1)
+pivot_offset = Vector2(160, 120)
+stream = ExtResource("1_g11i7")
+autoplay = true
+loop = true
