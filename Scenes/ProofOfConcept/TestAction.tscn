@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bw244sx8ny3w0"]
+[gd_scene load_steps=5 format=3 uid="uid://bebey1ucwxl7a"]
 
 [ext_resource type="Texture2D" uid="uid://w5wj86pmjcpx" path="res://Assets/Black.png" id="1_woej8"]
 [ext_resource type="Script" uid="uid://qsok0ndf1mh5" path="res://Scripts/NullStretcher.cs" id="2_g11i7"]
-[ext_resource type="VideoStream" uid="uid://b2ft0j88spu8v" path="res://Videos/ProofOfConcept/TestCutscene.ogv" id="3_ogj4t"]
-[ext_resource type="Script" uid="uid://dfsgybk0jgnp0" path="res://Scripts/Cutscene.cs" id="4_ogj4t"]
-[ext_resource type="AudioStream" uid="uid://cq8pcx66lgyho" path="res://Sounds/WhiteNoise.mp3" id="5_hobi8"]
+[ext_resource type="VideoStream" uid="uid://mfsbyxf8fcfi" path="res://Videos/ProofOfConcept/TestAction.ogv" id="3_tbq0c"]
+[ext_resource type="Script" uid="uid://cf8myer8d62pq" path="res://Scripts/TestAction.cs" id="4_tbq0c"]
 
 [node name="Scene001" type="Node2D"]
 
@@ -46,12 +45,6 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.2, 1.2)
 pivot_offset = Vector2(160, 120)
-stream = ExtResource("3_ogj4t")
-volume_db = -80.0
+stream = ExtResource("3_tbq0c")
 autoplay = true
-script = ExtResource("4_ogj4t")
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Control"]
-stream = ExtResource("5_hobi8")
-autoplay = true
-parameters/looping = true
+script = ExtResource("4_tbq0c")
