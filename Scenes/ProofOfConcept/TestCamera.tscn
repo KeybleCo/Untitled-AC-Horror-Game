@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://w5wj86pmjcpx" path="res://Assets/Black.png" id="1_kihsm"]
 [ext_resource type="Script" uid="uid://qsok0ndf1mh5" path="res://Scripts/NullStretcher.cs" id="2_l42oc"]
-[ext_resource type="VideoStream" uid="uid://bs3a66cqj7ktf" path="res://Videos/ProofOfConcept/TestWalk.ogv" id="3_rw5sg"]
+[ext_resource type="VideoStream" uid="uid://djkxq6caqc31x" path="res://Videos/ProofOfConcept/TestCamera.ogv" id="3_kihsm"]
 [ext_resource type="Script" uid="uid://k30jat0ufads" path="res://Scripts/CameraOnlyLogic.cs" id="4_kihsm"]
 
 [node name="Scene001" type="Node2D"]
@@ -45,7 +45,7 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.2, 1.2)
 pivot_offset = Vector2(160, 120)
-stream = ExtResource("3_rw5sg")
+stream = ExtResource("3_kihsm")
 autoplay = true
 loop = true
 script = ExtResource("4_kihsm")

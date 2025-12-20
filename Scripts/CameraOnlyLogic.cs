@@ -1,19 +1,12 @@
 using Godot;
 
-public partial class CameraLogic : VideoStreamPlayer
+public partial class CameraOnlyLogic : VideoStreamPlayer
 {
     public override void _Ready()
     {
         Input.MouseMode = Input.MouseModeEnum.Captured;
         Position = Vector2.Zero;
     }
-
-    // public override void _Process(double delta)
-    // {
-
-    //     this.Position = GetViewport().GetMousePosition();
-
-    // }
 
     public override void _Input(InputEvent @event)
     {
